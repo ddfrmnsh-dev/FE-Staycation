@@ -3,6 +3,9 @@ import Button from "elements/Button";
 import IconText from "parts/IconText";
 
 export default function Footer() {
+  const d = new Date();
+  let year = d.getFullYear();
+
   return (
     <footer>
       <div className="container">
@@ -78,7 +81,7 @@ export default function Footer() {
         </div>
         <div className="row">
           <div className="col text-center copyrights">
-            Copyright © {Date()} Staycation. All Rights Reserved.
+            Copyright ©{year} Staycation. All Rights Reserved.
           </div>
         </div>
       </div>
